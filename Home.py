@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 filepaths = glob.glob("invoices/*.xlsx")
-print(filepaths)
+#print(filepaths)
 for filepath in filepaths:
     df = pd.read_excel(filepath, sheet_name="Sheet 1", index_col=False)
 
